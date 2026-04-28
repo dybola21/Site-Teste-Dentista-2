@@ -1,0 +1,81 @@
+.differentials-section {
+  background-color: var(--primary);
+  color: var(--text-light);
+}
+
+.differentials-header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto var(--spacing-2xl);
+}
+
+.differentials-title {
+  color: var(--text-light);
+  margin-bottom: 1rem;
+}
+
+.differentials-subtitle {
+  color: rgba(251, 250, 248, 0.8);
+  font-size: 1.125rem;
+}
+
+.differentials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.diff-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.diff-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background-color: rgba(212, 186, 150, 0.15);
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
+}
+
+.diff-icon-wrapper svg {
+  width: 28px;
+  height: 28px;
+  stroke-width: 1.5;
+}
+
+.diff-title {
+  color: var(--secondary);
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.diff-desc {
+  color: rgba(251, 250, 248, 0.7);
+  line-height: 1.6;
+  font-size: 0.9375rem;
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .differentials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .differentials-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  
+  .differentials-header {
+    text-align: left;
+    margin-bottom: var(--spacing-xl);
+  }
+}

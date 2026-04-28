@@ -1,0 +1,71 @@
+.problem-section {
+  background-color: var(--surface);
+}
+
+.problem-header {
+  max-width: 600px;
+  margin-bottom: var(--spacing-xl);
+}
+
+.problem-subtitle {
+  color: var(--text-secondary);
+  font-size: 1.125rem;
+  margin-top: 1rem;
+}
+
+.problem-list {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--border);
+}
+
+.problem-item {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 2rem;
+  padding: 2.5rem 0;
+  border-bottom: 1px solid var(--border);
+  transition: background-color 0.3s ease;
+}
+
+.problem-item:hover {
+  background-color: rgba(251, 250, 248, 0.5);
+}
+
+.problem-item-number {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--secondary);
+  font-weight: 300;
+  padding-top: 0.25rem;
+}
+
+.problem-item-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--primary);
+}
+
+.problem-item-desc {
+  color: var(--text-secondary);
+  margin: 0;
+  max-width: 800px;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .problem-item {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 2rem 0;
+  }
+  
+  .problem-item-number {
+    font-size: 1.25rem;
+    padding-top: 0;
+  }
+  
+  .problem-item-title {
+    font-size: 1.25rem;
+  }
+}

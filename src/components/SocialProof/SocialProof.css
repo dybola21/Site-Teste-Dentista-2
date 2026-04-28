@@ -1,0 +1,138 @@
+.proof-section {
+  background-color: var(--background);
+  padding: var(--spacing-3xl) 0;
+  border-top: 1px solid var(--border);
+}
+
+.proof-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.proof-badge {
+  color: var(--secondary);
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.proof-title {
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.google-rating {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--surface);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-full);
+  box-shadow: 0 4px 15px rgba(17, 50, 64, 0.05);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.rating-score {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1;
+}
+
+.rating-stars {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.rating-count {
+  color: var(--text-secondary);
+  font-size: 0.9375rem;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.review-card {
+  background-color: var(--surface);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 10px 30px rgba(17, 50, 64, 0.03);
+  border: 1px solid rgba(17, 50, 64, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(17, 50, 64, 0.08);
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.review-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.review-user h4 {
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  margin-bottom: 0.25rem;
+  color: var(--text-primary);
+}
+
+.review-stars {
+  display: flex;
+  gap: 0.125rem;
+}
+
+.review-text {
+  color: var(--text-secondary);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  font-style: italic;
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .proof-section {
+    padding: var(--spacing-xl) 0;
+  }
+  
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .google-rating {
+    padding: 1rem;
+    gap: 0.5rem;
+    flex-direction: column;
+  }
+}
